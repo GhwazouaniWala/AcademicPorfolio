@@ -23,7 +23,13 @@ import { embedOne, TASK_QUERY } from "./_embed.js";
 
 export const config = { runtime: "nodejs" };
 
-const MODEL = "gemini-2.5-flash";
+/**
+ * gemini-2.5-flash was retired for new API keys — it answers 404 with "no longer
+ * available to new users", which is why this endpoint failed on first deploy.
+ * Overridable by env so a future retirement is a dashboard change and a
+ * redeploy, not a code edit.
+ */
+const MODEL = process.env.GEMINI_MODEL || "gemini-3.6-flash";
 const GEMINI_URL =
   `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:streamGenerateContent?alt=sse`;
 const MAX_QUESTION_CHARS = 1000;
@@ -214,17 +220,29 @@ Question: ${question}`,
           },
         ],
         generationConfig: {
-          maxOutputTokens: 1024,
+          // Thinking tokens are billed against maxOutputTokens, and this model
+          // spends roughly 400 of them before writing anything. 1024 left too
+          // little headroom: a longer answer would hit MAX_TOKENS and stream
+          // back empty. 2048 covers both halves.
+          maxOutputTokens: 2048,
           temperature: 0.2,
           // Nothing here should be creative; the answer is a restatement of
           // retrieved text, so keep the sampling tight.
           topP: 0.9,
+          // Restating retrieved text does not need deliberation. "low" is the
+          // floor on this model — thinkingBudget: 0 is a 2.5-era parameter and
+          // is rejected outright as an invalid argument.
+          thinkingConfig: { thinkingLevel: "low" },
         },
       }),
     });
 
     if (!upstream.ok || !upstream.body) {
       const detail = await upstream.text().catch(() => "");
+      // Surface the upstream body in the function logs. Without this a 404 from
+      // a retired model looked identical to any other failure from the client
+      // side, which cost real time to diagnose.
+      console.error(`gemini ${upstream.status} for model ${MODEL}: ${detail.slice(0, 500)}`);
       const err = new Error(detail.slice(0, 200) || "gemini request failed");
       err.status = upstream.status;
       throw err;
@@ -276,7 +294,9 @@ Question: ${question}`,
         text:
           finishReason === "SAFETY" || finishReason === "RECITATION"
             ? "I can't answer that one. Try asking about his work or his stack."
-            : "That question came back empty. Try rephrasing it.",
+            : finishReason === "MAX_TOKENS"
+              ? "That answer ran long and got cut off before it started. Try a narrower question."
+              : "That question came back empty. Try rephrasing it.",
       });
     }
 
@@ -289,7 +309,9 @@ Question: ${question}`,
         ? "The assistant is over its rate limit right now. Try again in a minute."
         : status === 401 || status === 403
           ? "The assistant's credentials were rejected. The rest of the page still works."
-          : "The assistant broke on that one. Reload and try a different question.";
+          : status === 404
+            ? "The assistant's language model is unavailable on this deployment. Retrieval above is real; only the written answer is missing."
+            : "The assistant broke on that one. Reload and try a different question.";
 
     // Headers are already sent, so the error has to travel on the stream.
     send("error", { message, code: status || "unknown" });
