@@ -1,0 +1,710 @@
+{
+  "generatedAt": "2026-08-12T10:20:03.231Z",
+  "owner": "GhwazouaniWala",
+  "repos": {
+    "solace": {
+      "id": "solace",
+      "repo": "Solace",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Solace",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2026-08-06T14:24:51Z",
+      "pushedAt": "2026-08-08T12:25:11Z",
+      "languages": [
+        {
+          "name": "HTML",
+          "bytes": 526655,
+          "pct": 43.7
+        },
+        {
+          "name": "Python",
+          "bytes": 361552,
+          "pct": 30
+        },
+        {
+          "name": "JavaScript",
+          "bytes": 294546,
+          "pct": 24.4
+        },
+        {
+          "name": "CSS",
+          "bytes": 22308,
+          "pct": 1.9
+        }
+      ],
+      "readme": {
+        "intro": "A real-time, multimodal AI psychological coach — one that reads your face, hears your tone, and answers with a named therapeutic technique instead of a platitude.",
+        "stack": [
+          "React 19 + Vite 8",
+          "Tailwind CSS",
+          "Zustand",
+          "React Router 7",
+          "Recharts",
+          "Web Audio API",
+          "MediaRecorder",
+          "@ricky0123/vad-web",
+          "FastAPI",
+          "WebSockets",
+          "Pydantic Settings",
+          "faster-whisper + Silero VAD",
+          "Google Gemini 2.5 Flash (google-genai)",
+          "Kokoro-82M via Kokoro-FastAPI (Docker)",
+          "Ghazouaniwala/silma-tts-derja — our F5-TTS fine-tune",
+          "Vosk linto-asr-ar-tn",
+          "ChromaDB + multilingual-e5-base (sentence-transformers)",
+          "EmotiEffLib enetb08bestafew (EfficientNet-B0",
+          "ONNX Runtime)",
+          "MediaPipe Face + Hand Landmarker",
+          "OpenCV",
+          "Ghazouaniwala/emotionsspeech — our wav2vec2-XLSR-53 fine-tune",
+          "Gemini as a zero-shot classifier",
+          "PyTorch"
+        ],
+        "path": "data/readmes/solace.md",
+        "bytes": 38569
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/report.png",
+          "alt": "Coaching report with per-metric provenance",
+          "width": 1919,
+          "height": 796
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/home.png",
+          "alt": "Home screen with coaching mode picker and session history",
+          "width": 1919,
+          "height": 864
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/dashboard.png",
+          "alt": "Analytics dashboard",
+          "width": 1918,
+          "height": 852
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/dashboard-voice-vs-words.png",
+          "alt": "Channel disagreement analysis",
+          "width": 1918,
+          "height": 855
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/login.png",
+          "alt": "Sign-in screen",
+          "width": 1915,
+          "height": 853
+        }
+      ]
+    },
+    "critiq": {
+      "id": "critiq",
+      "repo": "Critiq",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Critiq",
+      "homepage": null,
+      "defaultBranch": "master",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2026-07-04T20:42:25Z",
+      "pushedAt": "2026-08-08T01:14:47Z",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 390412,
+          "pct": 77.4
+        },
+        {
+          "name": "TypeScript",
+          "bytes": 95981,
+          "pct": 19
+        },
+        {
+          "name": "CSS",
+          "bytes": 12331,
+          "pct": 2.4
+        },
+        {
+          "name": "JavaScript",
+          "bytes": 5116,
+          "pct": 1
+        }
+      ],
+      "readme": {
+        "intro": "Paste a URL. Get a structured brand identity profile and a weighted, evidence-grounded UX audit in about three minutes.",
+        "stack": [
+          "FastAPI + Uvicorn",
+          "LangGraph StateGraph",
+          "Custom RAG chain (chains/ragchain.py)",
+          "ChromaDB (embedded)",
+          "Self-hosted vLLM",
+          "Llama 3.1 70B Instruct",
+          "Playwright (Chromium)",
+          "Firecrawl",
+          "scikit-learn (K-Means) + Pillow",
+          "spaCy + textstat",
+          "SQLAlchemy + SQLite",
+          "WeasyPrint",
+          "React 19 + TypeScript + Vite",
+          "Zustand",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Recharts",
+          "Server-Sent Events"
+        ],
+        "path": "data/readmes/critiq.md",
+        "bytes": 24270
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-header-light.png",
+          "alt": "Report header — 88/100, grade A-, executive summary and run stats",
+          "width": 1915,
+          "height": 574
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/landing-dark.png",
+          "alt": "Landing page, dark theme",
+          "width": 1912,
+          "height": 853
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/landing-light.png",
+          "alt": "Landing page, light theme",
+          "width": 1918,
+          "height": 867
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-brand-dna-dark.png",
+          "alt": "Brand DNA tab — extracted color palette",
+          "width": 1917,
+          "height": 865
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-visual-structure-dark.png",
+          "alt": "Visual structure — layout pattern, hierarchy, personality",
+          "width": 1919,
+          "height": 864
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-radar-dark.png",
+          "alt": "14-dimension UX radar, dark theme",
+          "width": 1919,
+          "height": 869
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-radar-light.png",
+          "alt": "14-dimension UX radar, light theme",
+          "width": 1917,
+          "height": 870
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-dimensions-dark.png",
+          "alt": "Tone, readability, and per-dimension score cards",
+          "width": 1919,
+          "height": 867
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Critiq/master/docs/screenshots/report-top-fixes-dark.png",
+          "alt": "Top fixes ranked by impact",
+          "width": 1918,
+          "height": 869
+        }
+      ]
+    },
+    "wathiqa": {
+      "id": "wathiqa",
+      "repo": "Wathiqa",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Wathiqa",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2026-07-30T16:36:00Z",
+      "pushedAt": "2026-08-07T18:01:24Z",
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "bytes": 487078,
+          "pct": 48.4
+        },
+        {
+          "name": "Python",
+          "bytes": 259566,
+          "pct": 25.8
+        },
+        {
+          "name": "JavaScript",
+          "bytes": 250440,
+          "pct": 24.9
+        },
+        {
+          "name": "CSS",
+          "bytes": 8652,
+          "pct": 0.9
+        }
+      ],
+      "readme": {
+        "intro": "Document intake automation for Tunisian law firms. Photograph a handwritten client form with a phone, and it becomes a structured, searchable client record — without the paper ever leaving the office.",
+        "stack": [
+          "Python 3.12",
+          "FastAPI",
+          "SQLAlchemy 2.0 (typed Mapped[] models)",
+          "Pydantic v2",
+          "JWT auth with bcrypt",
+          "SQLite for development, PostgreSQL-ready",
+          "OpenCV",
+          "NumPy",
+          "SIFT/FLANN/MAGSAC registration",
+          "PyTorch",
+          "Hugging Face Transformers",
+          "VisionEncoderDecoderModel (TrOCR)",
+          "EasyOCR",
+          "React 19",
+          "Vite 8",
+          "React Router 7",
+          "custom i18n with RTL support",
+          "pytest",
+          "123 tests covering the pipeline",
+          "recognizers",
+          "tenancy"
+        ],
+        "path": "data/readmes/wathiqa.md",
+        "bytes": 24739
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/analytics-dark.png",
+          "alt": "Wathika dashboard",
+          "width": 1908,
+          "height": 863
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/word-segmentation.png",
+          "alt": "Word segmentation on real field crops",
+          "width": 1240,
+          "height": 534
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/login-light.png",
+          "alt": "Sign in, light theme",
+          "width": 1916,
+          "height": 860
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/login-dark.png",
+          "alt": "Sign in, dark theme",
+          "width": 1917,
+          "height": 859
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/dashboard-light.png",
+          "alt": "Dashboard, light theme",
+          "width": 1918,
+          "height": 858
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/dashboard-dark.png",
+          "alt": "Dashboard, dark theme",
+          "width": 1919,
+          "height": 866
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/analytics-light.png",
+          "alt": "Dashboard analytics, light theme",
+          "width": 1919,
+          "height": 861
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/capture-light.png",
+          "alt": "Document capture, light theme",
+          "width": 1906,
+          "height": 874
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/capture-dark.png",
+          "alt": "Document capture, dark theme",
+          "width": 1900,
+          "height": 861
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-dark.png",
+          "alt": "Document types, dark theme",
+          "width": 1919,
+          "height": 862
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/command-palette.png",
+          "alt": "Command palette",
+          "width": 1919,
+          "height": 862
+        }
+      ]
+    },
+    "neurashop": {
+      "id": "neurashop",
+      "repo": "NeuraShop",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/NeuraShop",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2026-08-08T15:14:13Z",
+      "pushedAt": "2026-08-08T15:19:10Z",
+      "languages": [
+        {
+          "name": "HTML",
+          "bytes": 230661,
+          "pct": 74.9
+        },
+        {
+          "name": "Python",
+          "bytes": 77346,
+          "pct": 25.1
+        }
+      ],
+      "readme": {
+        "intro": "E-Commerce Intelligent & Inclusif — six deep-learning modules, one marketplace, zero manual data entry.",
+        "stack": [],
+        "path": "data/readmes/neurashop.md",
+        "bytes": 25313
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/01-catalog-dark.png",
+          "alt": "Catalogue dark",
+          "width": 2880,
+          "height": 5356
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/02-catalog-light.png",
+          "alt": "Catalogue light",
+          "width": 2880,
+          "height": 5356
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/03-product-detail.png",
+          "alt": "Product detail",
+          "width": 2880,
+          "height": 4312
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/04-sentiment.png",
+          "alt": "Sentiment",
+          "width": 2880,
+          "height": 4632
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/05-dashboard.png",
+          "alt": "Dashboard",
+          "width": 2880,
+          "height": 4580
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/06-dashboard-light.png",
+          "alt": "Dashboard light",
+          "width": 2880,
+          "height": 4580
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/07-seller-studio.png",
+          "alt": "Seller studio",
+          "width": 2880,
+          "height": 2412
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/08-orders.png",
+          "alt": "Orders",
+          "width": 2880,
+          "height": 1900
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/10-command-palette.png",
+          "alt": "Command palette",
+          "width": 2880,
+          "height": 1900
+        }
+      ]
+    },
+    "summify": {
+      "id": "summify",
+      "repo": "Summify",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Summify",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2025-08-21T06:10:19Z",
+      "pushedAt": "2026-08-08T14:03:31Z",
+      "languages": [
+        {
+          "name": "Java",
+          "bytes": 130633,
+          "pct": 74
+        },
+        {
+          "name": "CSS",
+          "bytes": 37562,
+          "pct": 21.3
+        },
+        {
+          "name": "HTML",
+          "bytes": 8323,
+          "pct": 4.7
+        }
+      ],
+      "readme": {
+        "intro": "Built during my end-of-studies internship at Wevioo. Developed by Walae Ghazouani under the Scrum methodology across three sprints. The full internship report (Rapprt de stage.docx) documents the analysis, UML design, sprint backlogs and retrospectives behind this codebase.",
+        "stack": [
+          "Java",
+          "JavaFX (controls",
+          "fxml",
+          "web)",
+          "Maven (+ shade plugin for a fat JAR)",
+          "MSAL4J (com.microsoft.azure:msal4j)",
+          "Apache HttpClient 5 + java.net.http.HttpClient",
+          "Gson + org.json",
+          "MySQL Connector/J",
+          "Apache PDFBox",
+          "com.auth0:java-jwt",
+          "FullCalendar (bundled",
+          "rendered in a WebView)",
+          "Python",
+          "Flask (REST",
+          "POST /process)",
+          "OpenAI Whisper (via Replicate API)",
+          "DeepSeek",
+          "PDF generation",
+          "one file per summary type",
+          "Microsoft Identity Platform",
+          "Microsoft Graph API"
+        ],
+        "path": "data/readmes/summify.md",
+        "bytes": 23674
+      },
+      "images": []
+    },
+    "water-potability": {
+      "id": "water-potability",
+      "repo": "water-potability-Pipeline",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/water-potability-Pipeline",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2025-11-16T16:42:24Z",
+      "pushedAt": "2026-08-08T15:37:56Z",
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "bytes": 1687144,
+          "pct": 99.8
+        }
+      ],
+      "readme": {
+        "intro": "A binary classification pipeline that predicts whether a water sample is potable (safe to drink) from nine physico-chemical measurements, using an XGBoost classifier tuned by grid search.",
+        "stack": [],
+        "path": "data/readmes/water-potability.md",
+        "bytes": 17424
+      },
+      "images": []
+    },
+    "fx-alphalab": {
+      "id": "fx-alphalab",
+      "repo": "fx-alphalabs",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/fx-alphalabs",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": true,
+      "createdAt": "2026-05-28T11:59:52Z",
+      "pushedAt": "2026-08-08T13:06:41Z",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 476212,
+          "pct": 61.3
+        },
+        {
+          "name": "TypeScript",
+          "bytes": 242223,
+          "pct": 31.2
+        },
+        {
+          "name": "HTML",
+          "bytes": 47874,
+          "pct": 6.2
+        },
+        {
+          "name": "Makefile",
+          "bytes": 4863,
+          "pct": 0.6
+        },
+        {
+          "name": "CSS",
+          "bytes": 3598,
+          "pct": 0.5
+        }
+      ],
+      "readme": {
+        "intro": "Real-time market intelligence · Explainable AI signals · Risk-aware decision support · Interactive performance analytics",
+        "stack": [
+          "Multi-agent system with central orchestration",
+          "Technical",
+          "Macroeconomic",
+          "Sentiment",
+          "Conviction gate + orchestrator",
+          "ChromaDB",
+          "sentence-transformers",
+          "keyword fallback",
+          "Groq (hosted)",
+          "Ollama (local)",
+          "PyTorch",
+          "XGBoost",
+          "scikit-learn",
+          "hmmlearn",
+          "Pandas",
+          "NumPy",
+          "SciPy",
+          "PyArrow",
+          "Parquet / CSV / JSON",
+          "yfinance",
+          "feedparser",
+          "custom macro feeds",
+          "FastAPI + Uvicorn",
+          "REST API"
+        ],
+        "path": "data/readmes/fx-alphalab.md",
+        "bytes": 27700
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/architecture.jpg",
+          "alt": "FX AlphaLab global system architecture",
+          "height": 853,
+          "width": 1280
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/dashboard.jpg",
+          "alt": "FX AlphaLab live dashboard",
+          "height": 472,
+          "width": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/signals.jpg",
+          "alt": "FX AlphaLab detailed signal analysis",
+          "height": 806,
+          "width": 1280
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/performance.jpg",
+          "alt": "FX AlphaLab strategy performance dashboard",
+          "height": 806,
+          "width": 1280
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/history.jpg",
+          "alt": "FX AlphaLab signal history ledger",
+          "height": 806,
+          "width": 1280
+        }
+      ]
+    }
+  },
+  "models": [
+    {
+      "family": "silma-tts-derja",
+      "id": "Ghazouaniwala/silma-tts-derja",
+      "url": "https://huggingface.co/Ghazouaniwala/silma-tts-derja",
+      "pipeline": "text-to-speech",
+      "tags": [
+        "f5-tts",
+        "text-to-speech",
+        "tts",
+        "silma-tts",
+        "tunisian",
+        "derja",
+        "arabic",
+        "ar"
+      ],
+      "revisions": 5,
+      "downloads": 362,
+      "lastModified": "2026-08-04T11:50:34.000Z"
+    },
+    {
+      "family": "trocr-tunisian-arabic",
+      "id": "Ghazouaniwala/trocr-tunisian-arabic",
+      "url": "https://huggingface.co/Ghazouaniwala/trocr-tunisian-arabic",
+      "pipeline": null,
+      "tags": [
+        "safetensors",
+        "vision-encoder-decoder"
+      ],
+      "revisions": 1,
+      "downloads": 51,
+      "lastModified": "2026-08-02T06:27:38.000Z"
+    },
+    {
+      "family": "emotions_speech",
+      "id": "Ghazouaniwala/emotions_speech",
+      "url": "https://huggingface.co/Ghazouaniwala/emotions_speech",
+      "pipeline": null,
+      "tags": [
+        "onnx"
+      ],
+      "revisions": 1,
+      "downloads": 33,
+      "lastModified": "2026-07-30T10:32:41.000Z"
+    },
+    {
+      "family": "xlsr53-emotion-multilingual",
+      "id": "Ghazouaniwala/xlsr53-emotion-multilingual-v5",
+      "url": "https://huggingface.co/Ghazouaniwala/xlsr53-emotion-multilingual-v5",
+      "pipeline": null,
+      "tags": [],
+      "revisions": 3,
+      "downloads": 24,
+      "lastModified": "2026-07-29T21:07:00.000Z"
+    }
+  ],
+  "stale": [
+    "summify",
+    "water-potability",
+    "fx-alphalab"
+  ],
+  "warnings": [
+    "Solace: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/voice-mode.png",
+    "Wathiqa: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-light.png",
+    "NeuraShop: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/09-auth-modal.png",
+    "NeuraShop: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/11-cart-drawer.png",
+    "hugging face: fetch failed"
+  ]
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wala Eddine Ghazouani — AI / Machine Learning Engineer. Multimodal AI systems, RAG, speech, computer vision, and the MLOps that keeps them running." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <meta name="theme-color" content="#080a0f" />
+    <title>Wala Eddine Ghazouani — AI / ML Engineer</title>
+    <script>
+      // Stamp the theme before first paint so there is no flash of the wrong
+      // surface. Kept inline and tiny on purpose — it must run before CSS.
+      (function () {
+        try {
+          var stored = localStorage.getItem("wg-theme");
+          var explicit = localStorage.getItem("wg-theme-explicit");
+          var theme =
+            explicit && (stored === "light" || stored === "dark")
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute("content", theme === "light" ? "#f6f4ef" : "#080a0f");
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+WALA EDDINE GHAZOUANI
+AI / Machine Learning Engineer | Final-Year Engineering Student
+Ariana, Tunisia | +216 28 524 395 | walaghazouani.work@gmail.com
+linkedin.com/in/ghazouani-wala-eddine | github.com/Ghazouaniwalae | huggingface.co/Ghazouaniwala
+Available January–June 2027 for a 6-month final-year engineering internship | Open to relocation — Europe | Canada
+Professional Summary
+Final-year Data Science engineering student at ESPRIT who takes AI systems from fine-tuning through to a deployed, monitored application. Two AI internships at Wevioo, two speech models published on Hugging Face, and project lead of a six-person multi-agent platform
+delivered with an industry partner. Focused on Large Language Model (LLM), multimodal and agentic systems, plus the MLOps that
+keeps them running.
+Experience
+AI Engineering Intern — Wevioo, Ariana, Tunisia Jun 2026 – Aug 2026
+• Designed and shipped Solace, a real-time multimodal AI coaching system: full-duplex voice over WebSocket, concurrent facial
+(EfficientNet-B0, ONNX) and vocal (wav2vec2-XLSR-53) emotion classifiers, and a Retrieval-Augmented Generation (RAG) layer
+over 603 clinical documents.
+• Fine-tuned and published two models to Hugging Face (speech-emotion classifier, 7 classes; F5-TTS Tunisian Derja synthesis) and cut
+end-to-end latency 4.1x by restructuring the inference pipeline for streaming and parallel execution.
+AI Engineer (Freelance) — Upwork, Remote 2025 – Present
+• Develop AI systems for international clients: Retrieval-Augmented Generation (RAG) chatbots over client knowledge bases, Python AI
+agents and workflow automation, and web-scraping pipelines that turn scattered sources into structured data — scoping to deployment, integration and handover.
+Software Engineering Intern — Wevioo, Ariana, Tunisia Jul 2025 – Aug 2025
+• Built MeetSummary, a self-hosted Microsoft Teams meeting summariser: Graph OAuth 2.0, automated OneDrive recording discovery,
+Whisper transcription, LLM summarisation and PDF export.
+• Delivered solo over three Scrum sprints (18 user stories, UML) on a hybrid JavaFX + Flask architecture with a REST bridge and
+MySQL data model.
+Projects
+FX AlphaLab — Multi-Agent Financial Intelligence Platform Feb 2026 – Jun 2026
+Python, PyTorch, XGBoost, scikit-learn, ChromaDB, FastAPI, MLflow, Prometheus, Docker | /fx-alphalabs
+• Project Lead of a six-person team over five months — an ESPRIT integrated engineering project delivered with VALUE; owned the
+macroeconomic agent in full (ingestion, feature engineering, market-regime detection, training, orchestration).
+• Set up the MLOps layer: separate Docker images for training and serving, MLflow tracking, Prometheus monitoring, and backtesting
+on win rate, profit factor, drawdown and Sharpe ratio.
+Wathiqa — Arabic Handwritten Document Intelligence Mar 2026 – May 2026
+Python, TrOCR, PyTorch, OpenCV, EasyOCR, FastAPI, SQLAlchemy, pytest | /Wathiqa
+• Adapted a TrOCR vision-encoder/decoder to handwritten Tunisian Arabic (30k-token Arabic vocabulary), routing each field type to a
+purpose-built engine and registering pages with SIFT keypoints and RANSAC homography.
+• Enforced multi-tenant data isolation structurally at the session layer, with an append-only audit log and 123 tests including crosstenant checks.
+Critiq — Multi-Agent Brand & UX Analyzer Apr 2026 – Jun 2026
+Python, LangGraph, vLLM (Llama 3.1 70B), ChromaDB, FastAPI, Playwright, React | /Critiq
+• Orchestrated six parallel agents with a LangGraph StateGraph, scoring 14 weighted UX dimensions grounded in a ChromaDB corpus
+of published UX research (NN/g, Baymard, WCAG 2.1).
+• Served self-hosted Llama 3.1 70B on vLLM behind retries, a circuit breaker and a deterministic heuristic fallback per dimension,
+delivering a full audit in under 3 minutes.
+Technical Skills
+Languages Python, SQL, Java, C, TypeScript/JavaScript
+AI & ML Machine Learning, Deep Learning, Computer Vision, Natural Language Processing (NLP), Large Language Models (LLM),
+Retrieval-Augmented Generation (RAG), fine-tuning (LoRA/PEFT), multimodal fusion; PyTorch, Hugging Face Transformers,
+TensorFlow/Keras, scikit-learn, XGBoost, ONNX, OpenCV, spaCy, LangGraph, ChromaDB, vLLM, wav2vec2, Whisper, TrOCR
+MLOps & Backend Docker, MLflow, Prometheus, CI/CD, Git, pytest; FastAPI, Flask, REST, WebSocket, Pydantic, SQLAlchemy, Spring Boot,
+MySQL, Pandas, NumPy; React, Vite, Tailwind CSS, JavaFX; Agile/Scrum, UML
+Education
+Engineering Degree in Computer Science — Data Science — ESPRIT, Ariana, Tunisia Sep 2024 – Jun 2027
+Preparatory Cycle for Engineering Studies — Maths & Physics — IPEI Bizerte, Tunisia Sep 2022 – Jun 2024
+Certifications & Languages
+NVIDIA Deep Learning Institute — Fundamentals of Deep Learning (2026), Building AI Agents with Multimodal Models (2025), Generative AI with
+Diffusion Models (2025) | 365 Data Science — LLM Engineering with Streamlit and OpenAI (2026)
+Languages: Arabic (native) | French (fluent, C1) | English (professional, C1)

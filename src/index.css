@@ -1,0 +1,423 @@
+@import "tailwindcss";
+
+/*
+ * Theme tokens indirect through runtime `--c-*` variables, so `bg-panel`,
+ * `text-signal` and friends all re-resolve the moment `data-theme` flips on
+ * <html>. Component code never needs to know which theme is active.
+ */
+@theme {
+  --color-void: var(--c-void);
+  --color-panel: var(--c-panel);
+  --color-panel-2: var(--c-panel-2);
+  --color-line: var(--c-line);
+  --color-signal: var(--c-signal);
+  --color-signal-2: var(--c-signal-2);
+  --color-signal-dim: var(--c-signal-dim);
+  --color-attention: var(--c-attention);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-faint: var(--c-faint);
+
+  --font-display: "IBM Plex Sans Condensed", "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --ease-signal: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ------------------------------------------------------------------ themes */
+
+/*
+ * The colour tokens are registered as real <color> properties. Two reasons:
+ * a plain `transition: background-color` on a value that is `var(--c-void)`
+ * does not re-resolve when the variable changes — the old colour sticks — and
+ * registering them lets the *variables* interpolate instead, so every surface
+ * using them cross-fades together on a theme swap. Engines without @property
+ * support simply swap instantly, which is a fine fallback.
+ */
+@property --c-void {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #0e131a;
+}
+@property --c-band {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #131922;
+}
+@property --c-panel {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #1a222c;
+}
+@property --c-panel-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #222b36;
+}
+@property --c-line {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2b3745;
+}
+@property --c-signal {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #4fd6c1;
+}
+@property --c-signal-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #8b8ef2;
+}
+@property --c-signal-dim {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2c6a62;
+}
+@property --c-attention {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f2b45f;
+}
+@property --c-ink {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #eaeff5;
+}
+@property --c-muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #97a3b2;
+}
+@property --c-faint {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #68747f;
+}
+
+/* Applied by useTheme after first paint, so the initial render does not
+   cross-fade in from the initial-values above. */
+:root.theme-ready {
+  transition:
+    --c-void 420ms var(--ease-signal),
+    --c-band 420ms var(--ease-signal),
+    --c-panel 420ms var(--ease-signal),
+    --c-panel-2 420ms var(--ease-signal),
+    --c-line 420ms var(--ease-signal),
+    --c-signal 420ms var(--ease-signal),
+    --c-signal-2 420ms var(--ease-signal),
+    --c-signal-dim 420ms var(--ease-signal),
+    --c-attention 420ms var(--ease-signal),
+    --c-ink 420ms var(--ease-signal),
+    --c-muted 420ms var(--ease-signal),
+    --c-faint 420ms var(--ease-signal);
+}
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --c-void: #0e131a;
+  --c-band: #131922;
+  --c-panel: #1a222c;
+  --c-panel-2: #222b36;
+  --c-line: #2b3745;
+  --c-signal: #4fd6c1;
+  --c-signal-2: #8b8ef2;
+  --c-signal-dim: #2c6a62;
+  --c-attention: #f2b45f;
+  --c-ink: #eaeff5;
+  --c-muted: #97a3b2;
+  --c-faint: #68747f;
+
+  /* surface treatments that cannot be expressed as a flat colour token */
+  --glass-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  --glass-border: rgba(234, 239, 245, 0.09);
+  --glass-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 24px 60px -30px rgba(0, 0, 0, 0.9);
+  --grain-opacity: 0.035;
+  --grain-blend: overlay;
+  --aurora-1: rgba(79, 214, 193, 0.20);
+  --aurora-2: rgba(139, 142, 242, 0.18);
+  --aurora-3: rgba(242, 180, 95, 0.10);
+  --grid-opacity: 0.14;
+  --edge-fade: var(--c-void);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --c-void: #efece4;
+  --c-band: #e7e3d8;
+  --c-panel: #fffdf9;
+  --c-panel-2: #f4f1e9;
+  --c-line: #d3cdc0;
+  --c-signal: #0a7367;
+  --c-signal-2: #5b5fdd;
+  --c-signal-dim: #62b8ac;
+  --c-attention: #a8590a;
+  --c-ink: #12161b;
+  --c-muted: #545f6c;
+  --c-faint: #6e7883;
+
+  --glass-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.55));
+  --glass-border: rgba(20, 23, 26, 0.10);
+  --glass-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 22px 50px -32px rgba(20, 23, 26, 0.35);
+  --grain-opacity: 0.03;
+  --grain-blend: multiply;
+  --aurora-1: rgba(14, 141, 128, 0.16);
+  --aurora-2: rgba(91, 95, 221, 0.14);
+  --aurora-3: rgba(168, 89, 10, 0.09);
+  --grid-opacity: 0.5;
+  --edge-fade: var(--c-void);
+}
+
+/* Follow the OS until the visitor makes an explicit choice. The inline script
+   in index.html stamps data-theme before first paint, so this only governs the
+   no-JS case. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+    --c-void: #efece4;
+    --c-band: #e7e3d8;
+    --c-panel: #fffdf9;
+    --c-panel-2: #f4f1e9;
+    --c-line: #d3cdc0;
+    --c-signal: #0a7367;
+    --c-signal-2: #5b5fdd;
+    --c-signal-dim: #62b8ac;
+    --c-attention: #a8590a;
+    --c-ink: #12161b;
+    --c-muted: #545f6c;
+    --c-faint: #6e7883;
+    --glass-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.55));
+    --glass-border: rgba(20, 23, 26, 0.1);
+    --glass-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 22px 50px -32px rgba(20, 23, 26, 0.35);
+    --grain-blend: multiply;
+    --aurora-1: rgba(14, 141, 128, 0.16);
+    --aurora-2: rgba(91, 95, 221, 0.14);
+    --aurora-3: rgba(168, 89, 10, 0.09);
+    --grid-opacity: 0.5;
+  }
+}
+
+/* ------------------------------------------------------------------- base */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-void);
+  color: var(--c-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--c-signal);
+  color: var(--c-void);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--c-void);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-line);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-faint);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--c-signal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------------------------ bands */
+
+/*
+ * Alternating section surfaces. Every section previously sat on the same flat
+ * page colour with only a hairline between them, which read as one endless
+ * slab — too dark to navigate in the dark theme, and an ocean of white in the
+ * light one. Banding gives the eye a boundary at every section change.
+ *
+ * The band is deliberately not fully opaque: the drifting aurora behind the
+ * page still shows through at low strength, so the depth survives.
+ */
+.band {
+  background-color: color-mix(in srgb, var(--c-band) 82%, transparent);
+}
+
+.band-edge {
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--c-ink) 6%, transparent);
+}
+
+/* --------------------------------------------------------------- surfaces */
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: var(--grain-blend);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.text-glow {
+  text-shadow: 0 0 28px color-mix(in srgb, var(--c-signal) 40%, transparent);
+}
+
+/* The signal→violet gradient, used for emphasis type. Falls back to a flat
+   signal fill where background-clip:text is unsupported. */
+.text-gradient {
+  color: var(--c-signal);
+  background: linear-gradient(100deg, var(--c-signal), var(--c-signal-2) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hairline {
+  background: linear-gradient(90deg, transparent, var(--c-line) 15%, var(--c-line) 85%, transparent);
+}
+
+/* ------------------------------------------------------ animated backdrop */
+
+/* Clipped to the viewport: the fields are deliberately larger than the screen
+   and drift past its edges, but they must never extend the scrollable area. */
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+  filter: blur(90px);
+}
+
+.aurora span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.aurora span:nth-child(1) {
+  width: 46vw;
+  height: 46vw;
+  top: 2%;
+  left: 58%;
+  background: radial-gradient(circle, var(--aurora-1), transparent 68%);
+  animation: drift-a 34s var(--ease-signal) infinite alternate;
+}
+.aurora span:nth-child(2) {
+  width: 52vw;
+  height: 52vw;
+  top: 38%;
+  left: -8%;
+  background: radial-gradient(circle, var(--aurora-2), transparent 68%);
+  animation: drift-b 44s var(--ease-signal) infinite alternate;
+}
+.aurora span:nth-child(3) {
+  width: 34vw;
+  height: 34vw;
+  top: 72%;
+  left: 62%;
+  background: radial-gradient(circle, var(--aurora-3), transparent 70%);
+  animation: drift-c 38s var(--ease-signal) infinite alternate;
+}
+
+@keyframes drift-a {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-14vw, 12vh, 0) scale(1.18);
+  }
+}
+@keyframes drift-b {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.1);
+  }
+  to {
+    transform: translate3d(16vw, -10vh, 0) scale(0.92);
+  }
+}
+@keyframes drift-c {
+  from {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+  to {
+    transform: translate3d(-10vw, -14vh, 0) scale(1.2);
+  }
+}
+
+.instrument-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: var(--grid-opacity);
+  background-image:
+    linear-gradient(var(--c-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--c-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 20%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 20%, transparent 78%);
+}
+
+/* Horizontal scroll regions fade into the page rather than being cut off. */
+.edge-fade-x {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* ------------------------------------------------------- 3D carousel stage */
+
+/* The clip lives on a wrapper, not on the perspective element itself —
+   `overflow: hidden` alongside `perspective` breaks preserve-3d in some
+   engines, and the cards need to keep their depth. */
+.stage-clip {
+  overflow: hidden;
+}
+
+/* Shallow enough that a 38° turn is unmistakably a turn, deep enough that the
+   off-centre cards do not smear. */
+.stage-3d {
+  perspective: 1100px;
+  perspective-origin: 50% 50%;
+}
+
+/* ---------------------------------------------------------- reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .aurora span {
+    animation: none !important;
+  }
+}
