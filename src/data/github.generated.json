@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T10:20:03.231Z",
+  "generatedAt": "2026-08-12T11:00:10.627Z",
   "owner": "GhwazouaniWala",
   "repos": {
     "solace": {
@@ -71,6 +71,12 @@
       },
       "images": [
         {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/voice-mode.png",
+          "alt": "Voice Mode — the orb pulses with your voice while the coach listens",
+          "width": 1919,
+          "height": 865
+        },
+        {
           "src": "https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/report.png",
           "alt": "Coaching report with per-metric provenance",
           "width": 1919,
@@ -99,6 +105,111 @@
           "alt": "Sign-in screen",
           "width": 1915,
           "height": 853
+        }
+      ]
+    },
+    "fx-alphalab": {
+      "id": "fx-alphalab",
+      "repo": "fx-alphalabs",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/fx-alphalabs",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": true,
+      "createdAt": "2026-05-28T11:59:52Z",
+      "pushedAt": "2026-08-08T13:06:41Z",
+      "languages": [
+        {
+          "name": "Python",
+          "bytes": 476212,
+          "pct": 61.3
+        },
+        {
+          "name": "TypeScript",
+          "bytes": 242223,
+          "pct": 31.2
+        },
+        {
+          "name": "HTML",
+          "bytes": 47874,
+          "pct": 6.2
+        },
+        {
+          "name": "Makefile",
+          "bytes": 4863,
+          "pct": 0.6
+        },
+        {
+          "name": "CSS",
+          "bytes": 3598,
+          "pct": 0.5
+        }
+      ],
+      "readme": {
+        "intro": "Real-time market intelligence · Explainable AI signals · Risk-aware decision support · Interactive performance analytics",
+        "stack": [
+          "Multi-agent system with central orchestration",
+          "Technical",
+          "Macroeconomic",
+          "Sentiment",
+          "Conviction gate + orchestrator",
+          "ChromaDB",
+          "sentence-transformers",
+          "keyword fallback",
+          "Groq (hosted)",
+          "Ollama (local)",
+          "PyTorch",
+          "XGBoost",
+          "scikit-learn",
+          "hmmlearn",
+          "Pandas",
+          "NumPy",
+          "SciPy",
+          "PyArrow",
+          "Parquet / CSV / JSON",
+          "yfinance",
+          "feedparser",
+          "custom macro feeds",
+          "FastAPI + Uvicorn",
+          "REST API"
+        ],
+        "path": "data/readmes/fx-alphalab.md",
+        "bytes": 27700
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/architecture.jpg",
+          "alt": "FX AlphaLab global system architecture",
+          "height": 853,
+          "width": 1280
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/dashboard.jpg",
+          "alt": "FX AlphaLab live dashboard",
+          "height": 472,
+          "width": 800
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/signals.jpg",
+          "alt": "FX AlphaLab detailed signal analysis",
+          "height": 806,
+          "width": 1280
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/performance.jpg",
+          "alt": "FX AlphaLab strategy performance dashboard",
+          "height": 806,
+          "width": 1280
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/history.jpg",
+          "alt": "FX AlphaLab signal history ledger",
+          "height": 806,
+          "width": 1280
         }
       ]
     },
@@ -340,6 +451,12 @@
           "height": 861
         },
         {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-light.png",
+          "alt": "Document types, light theme",
+          "width": 1919,
+          "height": 864
+        },
+        {
           "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-dark.png",
           "alt": "Document types, dark theme",
           "width": 1919,
@@ -435,8 +552,20 @@
           "height": 1900
         },
         {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/09-auth-modal.png",
+          "alt": "Auth",
+          "width": 2880,
+          "height": 1900
+        },
+        {
           "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/10-command-palette.png",
           "alt": "Command palette",
+          "width": 2880,
+          "height": 1900
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/11-cart-drawer.png",
+          "alt": "Cart",
           "width": 2880,
           "height": 1900
         }
@@ -532,111 +661,6 @@
         "bytes": 17424
       },
       "images": []
-    },
-    "fx-alphalab": {
-      "id": "fx-alphalab",
-      "repo": "fx-alphalabs",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/fx-alphalabs",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": true,
-      "createdAt": "2026-05-28T11:59:52Z",
-      "pushedAt": "2026-08-08T13:06:41Z",
-      "languages": [
-        {
-          "name": "Python",
-          "bytes": 476212,
-          "pct": 61.3
-        },
-        {
-          "name": "TypeScript",
-          "bytes": 242223,
-          "pct": 31.2
-        },
-        {
-          "name": "HTML",
-          "bytes": 47874,
-          "pct": 6.2
-        },
-        {
-          "name": "Makefile",
-          "bytes": 4863,
-          "pct": 0.6
-        },
-        {
-          "name": "CSS",
-          "bytes": 3598,
-          "pct": 0.5
-        }
-      ],
-      "readme": {
-        "intro": "Real-time market intelligence · Explainable AI signals · Risk-aware decision support · Interactive performance analytics",
-        "stack": [
-          "Multi-agent system with central orchestration",
-          "Technical",
-          "Macroeconomic",
-          "Sentiment",
-          "Conviction gate + orchestrator",
-          "ChromaDB",
-          "sentence-transformers",
-          "keyword fallback",
-          "Groq (hosted)",
-          "Ollama (local)",
-          "PyTorch",
-          "XGBoost",
-          "scikit-learn",
-          "hmmlearn",
-          "Pandas",
-          "NumPy",
-          "SciPy",
-          "PyArrow",
-          "Parquet / CSV / JSON",
-          "yfinance",
-          "feedparser",
-          "custom macro feeds",
-          "FastAPI + Uvicorn",
-          "REST API"
-        ],
-        "path": "data/readmes/fx-alphalab.md",
-        "bytes": 27700
-      },
-      "images": [
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/architecture.jpg",
-          "alt": "FX AlphaLab global system architecture",
-          "height": 853,
-          "width": 1280
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/dashboard.jpg",
-          "alt": "FX AlphaLab live dashboard",
-          "height": 472,
-          "width": 800
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/signals.jpg",
-          "alt": "FX AlphaLab detailed signal analysis",
-          "height": 806,
-          "width": 1280
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/performance.jpg",
-          "alt": "FX AlphaLab strategy performance dashboard",
-          "height": 806,
-          "width": 1280
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/fx-alphalabs/main/screenshots/history.jpg",
-          "alt": "FX AlphaLab signal history ledger",
-          "height": 806,
-          "width": 1280
-        }
-      ]
     }
   },
   "models": [
@@ -695,16 +719,6 @@
       "lastModified": "2026-07-29T21:07:00.000Z"
     }
   ],
-  "stale": [
-    "summify",
-    "water-potability",
-    "fx-alphalab"
-  ],
-  "warnings": [
-    "Solace: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/Solace/main/docs/screenshots/voice-mode.png",
-    "Wathiqa: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-light.png",
-    "NeuraShop: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/09-auth-modal.png",
-    "NeuraShop: dropped unreadable image https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/11-cart-drawer.png",
-    "hugging face: fetch failed"
-  ]
+  "stale": [],
+  "warnings": []
 }

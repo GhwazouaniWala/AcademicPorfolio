@@ -1,4 +1,7 @@
 import { useCallback, useState } from "react";
+// The /react entry point, not /next — Vercel's quickstart defaults to the
+// Next.js one, which does not exist for a Vite SPA.
+import { Analytics } from "@vercel/analytics/react";
 import Backdrop from "./components/Backdrop";
 import BootScreen from "./components/BootScreen";
 import Nav from "./components/Nav";
@@ -63,6 +66,12 @@ export default function App() {
         onOpenDemo={openDemo}
         theme={theme}
       />
+      {/*
+        Page views only, and no-ops off Vercel — locally it just logs to the
+        console. Cookieless and aggregate, so it does not weaken the privacy
+        note on the emotion demo: camera frames still never leave the browser.
+      */}
+      <Analytics />
     </div>
   );
 }
