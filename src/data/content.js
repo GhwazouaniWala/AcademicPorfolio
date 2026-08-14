@@ -10,12 +10,15 @@ export const profile = {
   github: "https://github.com/GhwazouaniWala",
   huggingface: "https://huggingface.co/Ghazouaniwala",
   summary:
-    "Final-year Data Science engineering student who takes AI systems from fine-tuning through to a deployed, monitored application. Two AI internships at Wevioo, two speech models published on Hugging Face, and project lead of a six-person multi-agent platform delivered with an industry partner. Focused on LLMs, multimodal and agentic systems, and the MLOps that keeps them running.",
+    "Final-year Data Science engineering student who takes AI systems from fine-tuning through to a deployed, monitored application. Two AI internships at Wevioo, two speech models published on Hugging Face, and project lead on a multi-agent trading-research platform delivered with an industry partner. Focused on LLMs, multimodal and agentic systems, and the MLOps that keeps them running.",
+  // Headline figures only. Team size deliberately is not one of them — it reads
+  // as a boast in isolation and says nothing about the work, so it lives once,
+  // in context, in the FX AlphaLab entry below.
   stats: [
     { value: "2", label: "AI internships @ Wevioo" },
-    { value: "2", label: "models published on Hugging Face" },
+    { value: "4", label: "models published on Hugging Face" },
     { value: "7", label: "shipped AI systems" },
-    { value: "6", label: "person team led (FX AlphaLab)" },
+    { value: "8", label: "professional certifications" },
   ],
 };
 
