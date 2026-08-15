@@ -13,7 +13,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "check:retrieval": "node scripts/check-retrieval.mjs",
-    "build:reel": "node scripts/build-demo-reel.mjs"
+    "build:reel": "node scripts/build-demo-reel.mjs",
+    "build:og": "node scripts/build-og-image.mjs"
   },
   "dependencies": {
     "@mediapipe/tasks-vision": "^1.0.1",

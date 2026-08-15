@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T11:46:38.542Z",
+  "generatedAt": "2026-08-15T18:06:44.311Z",
   "owner": "GhwazouaniWala",
   "repos": {
     "solace": {
@@ -212,6 +212,198 @@
           "width": 1280
         }
       ]
+    },
+    "neurashop": {
+      "id": "neurashop",
+      "repo": "NeuraShop",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/NeuraShop",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2026-08-08T15:14:13Z",
+      "pushedAt": "2026-08-08T15:19:10Z",
+      "languages": [
+        {
+          "name": "HTML",
+          "bytes": 230661,
+          "pct": 74.9
+        },
+        {
+          "name": "Python",
+          "bytes": 77346,
+          "pct": 25.1
+        }
+      ],
+      "readme": {
+        "intro": "E-Commerce Intelligent & Inclusif — six deep-learning modules, one marketplace, zero manual data entry.",
+        "stack": [],
+        "path": "data/readmes/neurashop.md",
+        "bytes": 25313
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/01-catalog-dark.png",
+          "alt": "Catalogue dark",
+          "width": 2880,
+          "height": 5356
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/02-catalog-light.png",
+          "alt": "Catalogue light",
+          "width": 2880,
+          "height": 5356
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/03-product-detail.png",
+          "alt": "Product detail",
+          "width": 2880,
+          "height": 4312
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/04-sentiment.png",
+          "alt": "Sentiment",
+          "width": 2880,
+          "height": 4632
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/05-dashboard.png",
+          "alt": "Dashboard",
+          "width": 2880,
+          "height": 4580
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/06-dashboard-light.png",
+          "alt": "Dashboard light",
+          "width": 2880,
+          "height": 4580
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/07-seller-studio.png",
+          "alt": "Seller studio",
+          "width": 2880,
+          "height": 2412
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/08-orders.png",
+          "alt": "Orders",
+          "width": 2880,
+          "height": 1900
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/09-auth-modal.png",
+          "alt": "Auth",
+          "width": 2880,
+          "height": 1900
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/10-command-palette.png",
+          "alt": "Command palette",
+          "width": 2880,
+          "height": 1900
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/11-cart-drawer.png",
+          "alt": "Cart",
+          "width": 2880,
+          "height": 1900
+        }
+      ]
+    },
+    "summify": {
+      "id": "summify",
+      "repo": "Summify",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Summify",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2025-08-21T06:10:19Z",
+      "pushedAt": "2026-08-08T14:03:31Z",
+      "languages": [
+        {
+          "name": "Java",
+          "bytes": 130633,
+          "pct": 74
+        },
+        {
+          "name": "CSS",
+          "bytes": 37562,
+          "pct": 21.3
+        },
+        {
+          "name": "HTML",
+          "bytes": 8323,
+          "pct": 4.7
+        }
+      ],
+      "readme": {
+        "intro": "Built during my end-of-studies internship at Wevioo. Developed by Walae Ghazouani under the Scrum methodology across three sprints. The full internship report (Rapprt de stage.docx) documents the analysis, UML design, sprint backlogs and retrospectives behind this codebase.",
+        "stack": [
+          "Java",
+          "JavaFX (controls",
+          "fxml",
+          "web)",
+          "Maven (+ shade plugin for a fat JAR)",
+          "MSAL4J (com.microsoft.azure:msal4j)",
+          "Apache HttpClient 5 + java.net.http.HttpClient",
+          "Gson + org.json",
+          "MySQL Connector/J",
+          "Apache PDFBox",
+          "com.auth0:java-jwt",
+          "FullCalendar (bundled",
+          "rendered in a WebView)",
+          "Python",
+          "Flask (REST",
+          "POST /process)",
+          "OpenAI Whisper (via Replicate API)",
+          "DeepSeek",
+          "PDF generation",
+          "one file per summary type",
+          "Microsoft Identity Platform",
+          "Microsoft Graph API"
+        ],
+        "path": "data/readmes/summify.md",
+        "bytes": 23674
+      },
+      "images": []
+    },
+    "water-potability": {
+      "id": "water-potability",
+      "repo": "water-potability-Pipeline",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/water-potability-Pipeline",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2025-11-16T16:42:24Z",
+      "pushedAt": "2026-08-08T15:37:56Z",
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "bytes": 1687144,
+          "pct": 99.8
+        }
+      ],
+      "readme": {
+        "intro": "A binary classification pipeline that predicts whether a water sample is potable (safe to drink) from nine physico-chemical measurements, using an XGBoost classifier tuned by grid search.",
+        "stack": [],
+        "path": "data/readmes/water-potability.md",
+        "bytes": 17424
+      },
+      "images": []
     },
     "critiq": {
       "id": "critiq",
@@ -469,198 +661,6 @@
           "height": 862
         }
       ]
-    },
-    "neurashop": {
-      "id": "neurashop",
-      "repo": "NeuraShop",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/NeuraShop",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": false,
-      "createdAt": "2026-08-08T15:14:13Z",
-      "pushedAt": "2026-08-08T15:19:10Z",
-      "languages": [
-        {
-          "name": "HTML",
-          "bytes": 230661,
-          "pct": 74.9
-        },
-        {
-          "name": "Python",
-          "bytes": 77346,
-          "pct": 25.1
-        }
-      ],
-      "readme": {
-        "intro": "E-Commerce Intelligent & Inclusif — six deep-learning modules, one marketplace, zero manual data entry.",
-        "stack": [],
-        "path": "data/readmes/neurashop.md",
-        "bytes": 25313
-      },
-      "images": [
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/01-catalog-dark.png",
-          "alt": "Catalogue dark",
-          "width": 2880,
-          "height": 5356
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/02-catalog-light.png",
-          "alt": "Catalogue light",
-          "width": 2880,
-          "height": 5356
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/03-product-detail.png",
-          "alt": "Product detail",
-          "width": 2880,
-          "height": 4312
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/04-sentiment.png",
-          "alt": "Sentiment",
-          "width": 2880,
-          "height": 4632
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/05-dashboard.png",
-          "alt": "Dashboard",
-          "width": 2880,
-          "height": 4580
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/06-dashboard-light.png",
-          "alt": "Dashboard light",
-          "width": 2880,
-          "height": 4580
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/07-seller-studio.png",
-          "alt": "Seller studio",
-          "width": 2880,
-          "height": 2412
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/08-orders.png",
-          "alt": "Orders",
-          "width": 2880,
-          "height": 1900
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/09-auth-modal.png",
-          "alt": "Auth",
-          "width": 2880,
-          "height": 1900
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/10-command-palette.png",
-          "alt": "Command palette",
-          "width": 2880,
-          "height": 1900
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/NeuraShop/main/docs/screenshots/11-cart-drawer.png",
-          "alt": "Cart",
-          "width": 2880,
-          "height": 1900
-        }
-      ]
-    },
-    "summify": {
-      "id": "summify",
-      "repo": "Summify",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/Summify",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": false,
-      "createdAt": "2025-08-21T06:10:19Z",
-      "pushedAt": "2026-08-08T14:03:31Z",
-      "languages": [
-        {
-          "name": "Java",
-          "bytes": 130633,
-          "pct": 74
-        },
-        {
-          "name": "CSS",
-          "bytes": 37562,
-          "pct": 21.3
-        },
-        {
-          "name": "HTML",
-          "bytes": 8323,
-          "pct": 4.7
-        }
-      ],
-      "readme": {
-        "intro": "Built during my end-of-studies internship at Wevioo. Developed by Walae Ghazouani under the Scrum methodology across three sprints. The full internship report (Rapprt de stage.docx) documents the analysis, UML design, sprint backlogs and retrospectives behind this codebase.",
-        "stack": [
-          "Java",
-          "JavaFX (controls",
-          "fxml",
-          "web)",
-          "Maven (+ shade plugin for a fat JAR)",
-          "MSAL4J (com.microsoft.azure:msal4j)",
-          "Apache HttpClient 5 + java.net.http.HttpClient",
-          "Gson + org.json",
-          "MySQL Connector/J",
-          "Apache PDFBox",
-          "com.auth0:java-jwt",
-          "FullCalendar (bundled",
-          "rendered in a WebView)",
-          "Python",
-          "Flask (REST",
-          "POST /process)",
-          "OpenAI Whisper (via Replicate API)",
-          "DeepSeek",
-          "PDF generation",
-          "one file per summary type",
-          "Microsoft Identity Platform",
-          "Microsoft Graph API"
-        ],
-        "path": "data/readmes/summify.md",
-        "bytes": 23674
-      },
-      "images": []
-    },
-    "water-potability": {
-      "id": "water-potability",
-      "repo": "water-potability-Pipeline",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/water-potability-Pipeline",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": false,
-      "createdAt": "2025-11-16T16:42:24Z",
-      "pushedAt": "2026-08-08T15:37:56Z",
-      "languages": [
-        {
-          "name": "Jupyter Notebook",
-          "bytes": 1687144,
-          "pct": 99.8
-        }
-      ],
-      "readme": {
-        "intro": "A binary classification pipeline that predicts whether a water sample is potable (safe to drink) from nine physico-chemical measurements, using an XGBoost classifier tuned by grid search.",
-        "stack": [],
-        "path": "data/readmes/water-potability.md",
-        "bytes": 17424
-      },
-      "images": []
     }
   },
   "models": [
@@ -680,7 +680,7 @@
         "ar"
       ],
       "revisions": 5,
-      "downloads": 390,
+      "downloads": 393,
       "lastModified": "2026-08-04T11:50:34.000Z"
     },
     {
@@ -715,10 +715,13 @@
       "pipeline": null,
       "tags": [],
       "revisions": 3,
-      "downloads": 21,
+      "downloads": 20,
       "lastModified": "2026-07-29T21:07:00.000Z"
     }
   ],
-  "stale": [],
+  "stale": [
+    "critiq",
+    "wathiqa"
+  ],
   "warnings": []
 }
