@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T18:06:44.311Z",
+  "generatedAt": "2026-08-16T10:45:47.407Z",
   "owner": "GhwazouaniWala",
   "repos": {
     "solace": {
@@ -107,6 +107,236 @@
           "height": 853
         }
       ]
+    },
+    "wathiqa": {
+      "id": "wathiqa",
+      "repo": "Wathiqa",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Wathiqa",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2026-07-30T16:36:00Z",
+      "pushedAt": "2026-08-07T18:01:24Z",
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "bytes": 487078,
+          "pct": 48.4
+        },
+        {
+          "name": "Python",
+          "bytes": 259566,
+          "pct": 25.8
+        },
+        {
+          "name": "JavaScript",
+          "bytes": 250440,
+          "pct": 24.9
+        },
+        {
+          "name": "CSS",
+          "bytes": 8652,
+          "pct": 0.9
+        }
+      ],
+      "readme": {
+        "intro": "Document intake automation for Tunisian law firms. Photograph a handwritten client form with a phone, and it becomes a structured, searchable client record — without the paper ever leaving the office.",
+        "stack": [
+          "Python 3.12",
+          "FastAPI",
+          "SQLAlchemy 2.0 (typed Mapped[] models)",
+          "Pydantic v2",
+          "JWT auth with bcrypt",
+          "SQLite for development, PostgreSQL-ready",
+          "OpenCV",
+          "NumPy",
+          "SIFT/FLANN/MAGSAC registration",
+          "PyTorch",
+          "Hugging Face Transformers",
+          "VisionEncoderDecoderModel (TrOCR)",
+          "EasyOCR",
+          "React 19",
+          "Vite 8",
+          "React Router 7",
+          "custom i18n with RTL support",
+          "pytest",
+          "123 tests covering the pipeline",
+          "recognizers",
+          "tenancy"
+        ],
+        "path": "data/readmes/wathiqa.md",
+        "bytes": 24739
+      },
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/analytics-dark.png",
+          "alt": "Wathika dashboard",
+          "width": 1908,
+          "height": 863
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/word-segmentation.png",
+          "alt": "Word segmentation on real field crops",
+          "width": 1240,
+          "height": 534
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/login-light.png",
+          "alt": "Sign in, light theme",
+          "width": 1916,
+          "height": 860
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/login-dark.png",
+          "alt": "Sign in, dark theme",
+          "width": 1917,
+          "height": 859
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/dashboard-light.png",
+          "alt": "Dashboard, light theme",
+          "width": 1918,
+          "height": 858
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/dashboard-dark.png",
+          "alt": "Dashboard, dark theme",
+          "width": 1919,
+          "height": 866
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/analytics-light.png",
+          "alt": "Dashboard analytics, light theme",
+          "width": 1919,
+          "height": 861
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/capture-light.png",
+          "alt": "Document capture, light theme",
+          "width": 1906,
+          "height": 874
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/capture-dark.png",
+          "alt": "Document capture, dark theme",
+          "width": 1900,
+          "height": 861
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-light.png",
+          "alt": "Document types, light theme",
+          "width": 1919,
+          "height": 864
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-dark.png",
+          "alt": "Document types, dark theme",
+          "width": 1919,
+          "height": 862
+        },
+        {
+          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/command-palette.png",
+          "alt": "Command palette",
+          "width": 1919,
+          "height": 862
+        }
+      ]
+    },
+    "summify": {
+      "id": "summify",
+      "repo": "Summify",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/Summify",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2025-08-21T06:10:19Z",
+      "pushedAt": "2026-08-08T14:03:31Z",
+      "languages": [
+        {
+          "name": "Java",
+          "bytes": 130633,
+          "pct": 74
+        },
+        {
+          "name": "CSS",
+          "bytes": 37562,
+          "pct": 21.3
+        },
+        {
+          "name": "HTML",
+          "bytes": 8323,
+          "pct": 4.7
+        }
+      ],
+      "readme": {
+        "intro": "Built during my end-of-studies internship at Wevioo. Developed by Walae Ghazouani under the Scrum methodology across three sprints. The full internship report (Rapprt de stage.docx) documents the analysis, UML design, sprint backlogs and retrospectives behind this codebase.",
+        "stack": [
+          "Java",
+          "JavaFX (controls",
+          "fxml",
+          "web)",
+          "Maven (+ shade plugin for a fat JAR)",
+          "MSAL4J (com.microsoft.azure:msal4j)",
+          "Apache HttpClient 5 + java.net.http.HttpClient",
+          "Gson + org.json",
+          "MySQL Connector/J",
+          "Apache PDFBox",
+          "com.auth0:java-jwt",
+          "FullCalendar (bundled",
+          "rendered in a WebView)",
+          "Python",
+          "Flask (REST",
+          "POST /process)",
+          "OpenAI Whisper (via Replicate API)",
+          "DeepSeek",
+          "PDF generation",
+          "one file per summary type",
+          "Microsoft Identity Platform",
+          "Microsoft Graph API"
+        ],
+        "path": "data/readmes/summify.md",
+        "bytes": 23674
+      },
+      "images": []
+    },
+    "water-potability": {
+      "id": "water-potability",
+      "repo": "water-potability-Pipeline",
+      "owner": "GhwazouaniWala",
+      "url": "https://github.com/GhwazouaniWala/water-potability-Pipeline",
+      "homepage": null,
+      "defaultBranch": "main",
+      "description": null,
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "createdAt": "2025-11-16T16:42:24Z",
+      "pushedAt": "2026-08-08T15:37:56Z",
+      "languages": [
+        {
+          "name": "Jupyter Notebook",
+          "bytes": 1687144,
+          "pct": 99.8
+        }
+      ],
+      "readme": {
+        "intro": "A binary classification pipeline that predicts whether a water sample is potable (safe to drink) from nine physico-chemical measurements, using an XGBoost classifier tuned by grid search.",
+        "stack": [],
+        "path": "data/readmes/water-potability.md",
+        "bytes": 17424
+      },
+      "images": []
     },
     "fx-alphalab": {
       "id": "fx-alphalab",
@@ -314,97 +544,6 @@
         }
       ]
     },
-    "summify": {
-      "id": "summify",
-      "repo": "Summify",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/Summify",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": false,
-      "createdAt": "2025-08-21T06:10:19Z",
-      "pushedAt": "2026-08-08T14:03:31Z",
-      "languages": [
-        {
-          "name": "Java",
-          "bytes": 130633,
-          "pct": 74
-        },
-        {
-          "name": "CSS",
-          "bytes": 37562,
-          "pct": 21.3
-        },
-        {
-          "name": "HTML",
-          "bytes": 8323,
-          "pct": 4.7
-        }
-      ],
-      "readme": {
-        "intro": "Built during my end-of-studies internship at Wevioo. Developed by Walae Ghazouani under the Scrum methodology across three sprints. The full internship report (Rapprt de stage.docx) documents the analysis, UML design, sprint backlogs and retrospectives behind this codebase.",
-        "stack": [
-          "Java",
-          "JavaFX (controls",
-          "fxml",
-          "web)",
-          "Maven (+ shade plugin for a fat JAR)",
-          "MSAL4J (com.microsoft.azure:msal4j)",
-          "Apache HttpClient 5 + java.net.http.HttpClient",
-          "Gson + org.json",
-          "MySQL Connector/J",
-          "Apache PDFBox",
-          "com.auth0:java-jwt",
-          "FullCalendar (bundled",
-          "rendered in a WebView)",
-          "Python",
-          "Flask (REST",
-          "POST /process)",
-          "OpenAI Whisper (via Replicate API)",
-          "DeepSeek",
-          "PDF generation",
-          "one file per summary type",
-          "Microsoft Identity Platform",
-          "Microsoft Graph API"
-        ],
-        "path": "data/readmes/summify.md",
-        "bytes": 23674
-      },
-      "images": []
-    },
-    "water-potability": {
-      "id": "water-potability",
-      "repo": "water-potability-Pipeline",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/water-potability-Pipeline",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": false,
-      "createdAt": "2025-11-16T16:42:24Z",
-      "pushedAt": "2026-08-08T15:37:56Z",
-      "languages": [
-        {
-          "name": "Jupyter Notebook",
-          "bytes": 1687144,
-          "pct": 99.8
-        }
-      ],
-      "readme": {
-        "intro": "A binary classification pipeline that predicts whether a water sample is potable (safe to drink) from nine physico-chemical measurements, using an XGBoost classifier tuned by grid search.",
-        "stack": [],
-        "path": "data/readmes/water-potability.md",
-        "bytes": 17424
-      },
-      "images": []
-    },
     "critiq": {
       "id": "critiq",
       "repo": "Critiq",
@@ -522,145 +661,6 @@
           "height": 869
         }
       ]
-    },
-    "wathiqa": {
-      "id": "wathiqa",
-      "repo": "Wathiqa",
-      "owner": "GhwazouaniWala",
-      "url": "https://github.com/GhwazouaniWala/Wathiqa",
-      "homepage": null,
-      "defaultBranch": "main",
-      "description": null,
-      "topics": [],
-      "stars": 0,
-      "forks": 0,
-      "isFork": false,
-      "createdAt": "2026-07-30T16:36:00Z",
-      "pushedAt": "2026-08-07T18:01:24Z",
-      "languages": [
-        {
-          "name": "Jupyter Notebook",
-          "bytes": 487078,
-          "pct": 48.4
-        },
-        {
-          "name": "Python",
-          "bytes": 259566,
-          "pct": 25.8
-        },
-        {
-          "name": "JavaScript",
-          "bytes": 250440,
-          "pct": 24.9
-        },
-        {
-          "name": "CSS",
-          "bytes": 8652,
-          "pct": 0.9
-        }
-      ],
-      "readme": {
-        "intro": "Document intake automation for Tunisian law firms. Photograph a handwritten client form with a phone, and it becomes a structured, searchable client record — without the paper ever leaving the office.",
-        "stack": [
-          "Python 3.12",
-          "FastAPI",
-          "SQLAlchemy 2.0 (typed Mapped[] models)",
-          "Pydantic v2",
-          "JWT auth with bcrypt",
-          "SQLite for development, PostgreSQL-ready",
-          "OpenCV",
-          "NumPy",
-          "SIFT/FLANN/MAGSAC registration",
-          "PyTorch",
-          "Hugging Face Transformers",
-          "VisionEncoderDecoderModel (TrOCR)",
-          "EasyOCR",
-          "React 19",
-          "Vite 8",
-          "React Router 7",
-          "custom i18n with RTL support",
-          "pytest",
-          "123 tests covering the pipeline",
-          "recognizers",
-          "tenancy"
-        ],
-        "path": "data/readmes/wathiqa.md",
-        "bytes": 24739
-      },
-      "images": [
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/analytics-dark.png",
-          "alt": "Wathika dashboard",
-          "width": 1908,
-          "height": 863
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/word-segmentation.png",
-          "alt": "Word segmentation on real field crops",
-          "width": 1240,
-          "height": 534
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/login-light.png",
-          "alt": "Sign in, light theme",
-          "width": 1916,
-          "height": 860
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/login-dark.png",
-          "alt": "Sign in, dark theme",
-          "width": 1917,
-          "height": 859
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/dashboard-light.png",
-          "alt": "Dashboard, light theme",
-          "width": 1918,
-          "height": 858
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/dashboard-dark.png",
-          "alt": "Dashboard, dark theme",
-          "width": 1919,
-          "height": 866
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/analytics-light.png",
-          "alt": "Dashboard analytics, light theme",
-          "width": 1919,
-          "height": 861
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/capture-light.png",
-          "alt": "Document capture, light theme",
-          "width": 1906,
-          "height": 874
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/capture-dark.png",
-          "alt": "Document capture, dark theme",
-          "width": 1900,
-          "height": 861
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-light.png",
-          "alt": "Document types, light theme",
-          "width": 1919,
-          "height": 864
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/document-types-dark.png",
-          "alt": "Document types, dark theme",
-          "width": 1919,
-          "height": 862
-        },
-        {
-          "src": "https://raw.githubusercontent.com/GhwazouaniWala/Wathiqa/main/docs/screenshots/command-palette.png",
-          "alt": "Command palette",
-          "width": 1919,
-          "height": 862
-        }
-      ]
     }
   },
   "models": [
@@ -680,7 +680,7 @@
         "ar"
       ],
       "revisions": 5,
-      "downloads": 393,
+      "downloads": 394,
       "lastModified": "2026-08-04T11:50:34.000Z"
     },
     {
@@ -720,8 +720,9 @@
     }
   ],
   "stale": [
-    "critiq",
-    "wathiqa"
+    "fx-alphalab",
+    "neurashop",
+    "critiq"
   ],
   "warnings": []
 }
